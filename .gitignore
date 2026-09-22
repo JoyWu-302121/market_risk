@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data and generated outputs
+data/raw/
+data/interim/
+data/processed/
+outputs/
+reports/generated/
+
+# Secrets and local configuration
+.env
+*.pem
+*.key
+credentials*.json
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
