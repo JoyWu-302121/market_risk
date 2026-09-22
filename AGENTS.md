@@ -9,3 +9,5 @@
 - Never interpret a successful VaR exception test as validation of ES.
 - Do not silently discard failed dates, infeasible scenarios, or residual PCA risk.
 - Do not commit raw market-data archives, generated large results, credentials, or third-party documents.
+- Write repository documentation, notebook narratives, configuration comments, and user-facing research outputs in English.
+- Keep Colab notebooks thin: reusable pricing and risk logic belongs under `src/`.

@@ -14,3 +14,5 @@
 | M10 | Credit-risk extension | Spread risk and corporate-bond scenarios | Not started |
 
 Each milestone must preserve the distinction among specification, implementation, test evidence, and empirical research results.
+
+Google Colab is the primary interactive environment. GitHub remains the source of truth, and each executable milestone must run from a fresh Colab session using only committed code, declared dependencies, approved secrets, and reproducible public-data retrieval.

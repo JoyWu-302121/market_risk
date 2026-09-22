@@ -2,6 +2,8 @@
 
 Research-grade market-risk engine for a US Treasury bond portfolio, covering Value at Risk (VaR), Expected Shortfall (ES), stress testing, backtesting, and yield-curve risk decomposition.
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/00_colab_setup.ipynb)
+
 ## Current status
 
 **Milestone M01 — research specification locked.**
@@ -27,6 +29,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [Data dictionary](docs/DATA_DICTIONARY.md)
 - [Week 1 acceptance criteria](docs/WEEK01_ACCEPTANCE.md)
 - [Milestones](docs/MILESTONES.md)
+- [Google Colab workflow](docs/COLAB_WORKFLOW.md)
 
 ## Planned repository structure
 
@@ -38,6 +41,12 @@ notebooks/     Reviewable research notebooks
 src/           Reusable pricing and risk modules
 tests/         Financial invariants and integration tests
 ```
+
+## Google Colab
+
+Google Colab is the primary interactive development environment for this project. Use the badge above to open the setup notebook directly from GitHub. The notebook clones the current `main` branch into the Colab runtime, installs the declared dependencies, and verifies the repository layout.
+
+Colab runtimes are temporary. GitHub remains the source of truth for notebooks, source code, configuration, and documentation. Do not rely on files under `/content` as permanent storage.
 
 ## Reproducibility rules
 
