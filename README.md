@@ -6,9 +6,9 @@ Research-grade market-risk engine for a US Treasury bond portfolio, covering Val
 
 ## Current status
 
-**Milestone M01 — research specification locked.**
+**Milestone M02 — public-data ingestion and audit complete for the primary GSW curve.**
 
-This repository currently contains the research scope, data contract, validation rules, and milestone plan. It does not yet contain a validated pricing engine, downloaded market data, VaR/ES estimates, or backtest results.
+This repository contains the research contract and a tested, versioned ingestion pipeline for the primary Federal Reserve GSW curve. The optional FRED adapter is implemented and requires a user-provided Colab secret for live retrieval. The project does not yet contain a validated pricing engine, VaR/ES estimates, stress losses, or backtest results.
 
 ## Phase-one scope
 
@@ -30,6 +30,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [Week 1 acceptance criteria](docs/WEEK01_ACCEPTANCE.md)
 - [Milestones](docs/MILESTONES.md)
 - [Google Colab workflow](docs/COLAB_WORKFLOW.md)
+- [M02 data ingestion and acceptance](docs/M02_DATA_INGESTION.md)
 
 ## Planned repository structure
 
@@ -47,6 +48,8 @@ tests/         Financial invariants and integration tests
 Google Colab is the primary interactive development environment for this project. Use the badge above to open the setup notebook directly from GitHub. The notebook clones the current `main` branch into the Colab runtime, installs the declared dependencies, and verifies the repository layout.
 
 Colab runtimes are temporary. GitHub remains the source of truth for notebooks, source code, configuration, and documentation. Do not rely on files under `/content` as permanent storage.
+
+After the setup notebook succeeds, run [`01_public_data_ingestion.ipynb`](notebooks/01_public_data_ingestion.ipynb) to reproduce the M02 GSW download and audit.
 
 ## Reproducibility rules
 

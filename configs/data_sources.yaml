@@ -1,0 +1,24 @@
+gsw:
+  source_name: Federal Reserve GSW nominal yield curve
+  url: https://www.federalreserve.gov/data/yield-curve-tables/feds200628.csv
+  analysis_start: '2005-01-01'
+  required_tenors_years:
+    - 3
+    - 7
+    - 15
+  stale_after_calendar_days: 14
+  source_unit: percentage_points
+  model_unit: decimal
+  compounding: continuously_compounded
+
+fred:
+  api_url: https://api.stlouisfed.org/fred/series/observations
+  secret_name: FRED_API_KEY
+  observation_start: '2005-01-01'
+  series:
+    - id: DFF
+      role: cash_and_funding_proxy
+      source_unit: percent_per_annum
+    - id: DGS3MO
+      role: short_end_yield_proxy
+      source_unit: percent_per_annum
