@@ -1,0 +1,17 @@
+backtesting:
+  horizon_days: 1
+  estimation_windows:
+    - 500
+    - 750
+    - 1250
+  var_confidence_levels:
+    - 0.95
+    - 0.99
+  es_confidence_levels:
+    - 0.975
+    - 0.99
+  exception_rule: realized_loss_strictly_greater_than_var
+  significance_level: 0.05
+  portfolio_rule: recalibrate_target_weights_each_forecast_date
+  realized_loss_method: frozen_position_full_repricing
+  carry_roll_down_and_time_passage: excluded

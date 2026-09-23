@@ -33,3 +33,12 @@ The M05 packages provide:
 - Deterministic PCA factor shocks with retained residual variance
 - Family-constrained reverse-stress threshold searches
 - Central-difference key-rate attribution and full-versus-linear residuals
+
+The M06 risk package provides:
+
+- No-lookahead rolling historical VaR and ES forecasts
+- Exact target-value zero-coupon realized-loss calculations
+- Explicit missing-outcome and insufficient-history audit rows
+- Kupiec unconditional-coverage diagnostics
+- Christoffersen independence and conditional-coverage diagnostics
+- Exception-clustering and separate ES realized-tail diagnostics

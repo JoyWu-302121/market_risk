@@ -85,6 +85,22 @@ Status: **Locked for phase-one implementation**
 | `amplitude_bps` | float/null | basis points | Reverse-stress maximum-node amplitude at the boundary |
 | `residual_variance_ratio` | float/null | decimal | PCA variation outside the retained factors |
 
+## M06 backtesting fields
+
+| Field | Type | Unit | Rule |
+|---|---|---:|---|
+| `forecast_date` | date | ISO date | Curve date on which positions and the information set are frozen |
+| `realization_date` | date | ISO date | Next adjacent source curve date used for realized loss |
+| `forecast_value` | float | USD loss | Rolling Historical VaR or ES estimate |
+| `realized_loss` | float | USD loss | Exact frozen-position next-source-date loss |
+| `exception` | boolean | — | True only when realized loss is strictly greater than VaR |
+| `tail_var_value` | float | USD loss | Same-confidence VaR boundary used for ES tail-date selection |
+| `tail_observation` | boolean | — | Realized loss exceeds the same-confidence tail VaR |
+| `es_breach` | boolean | — | Realized loss exceeds forecast ES; descriptive only |
+| `kupiec_p_value` | float | decimal | Unconditional-coverage chi-square p-value |
+| `independence_p_value` | float | decimal | First-order exception-independence p-value |
+| `conditional_coverage_p_value` | float | decimal | Combined coverage and independence p-value |
+
 ## Missing-data rules
 
 1. Preserve raw missing values.
