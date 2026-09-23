@@ -6,9 +6,9 @@ Research-grade market-risk engine for a US Treasury bond portfolio, covering Val
 
 ## Current status
 
-**Milestone M02 — public-data ingestion and audit complete for the primary GSW curve.**
+**Milestone M03 — zero-curve construction, zero-coupon valuation, and DV01 validation complete.**
 
-This repository contains the research contract and a tested, versioned ingestion pipeline for the primary Federal Reserve GSW curve. The optional FRED adapter is implemented and requires a user-provided Colab secret for live retrieval. The project does not yet contain a validated pricing engine, VaR/ES estimates, stress losses, or backtest results.
+This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, and a validated phase-one pricing engine for synthetic Treasury zero-coupon positions. Historical VaR/ES estimates, stress losses, and backtest results have not yet been implemented.
 
 ## Phase-one scope
 
@@ -31,6 +31,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [Milestones](docs/MILESTONES.md)
 - [Google Colab workflow](docs/COLAB_WORKFLOW.md)
 - [M02 data ingestion and acceptance](docs/M02_DATA_INGESTION.md)
+- [M03 curve and valuation acceptance](docs/M03_CURVE_VALUATION.md)
 
 ## Planned repository structure
 
@@ -50,6 +51,8 @@ Google Colab is the primary interactive development environment for this project
 Colab runtimes are temporary. GitHub remains the source of truth for notebooks, source code, configuration, and documentation. Do not rely on files under `/content` as permanent storage.
 
 After the setup notebook succeeds, run [`01_public_data_ingestion.ipynb`](notebooks/01_public_data_ingestion.ipynb) to reproduce the M02 GSW download and audit.
+
+Run [`02_curve_and_valuation.ipynb`](notebooks/02_curve_and_valuation.ipynb) to reproduce M03 curve construction, portfolio calibration, full repricing, and DV01 checks.
 
 ## Reproducibility rules
 

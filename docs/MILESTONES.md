@@ -4,7 +4,7 @@
 |---|---|---|---|
 | M01 | Research and data contracts | Scope, dictionary, and acceptance criteria | Complete — documentation only |
 | M02 | Public-data ingestion | Versioned GSW/FRED download and data audit | Complete — primary GSW live; optional FRED adapter ready |
-| M03 | Curve and valuation engine | Curve interpolation, zero-coupon pricing, DV01 checks | Not started |
+| M03 | Curve and valuation engine | Curve interpolation, zero-coupon pricing, DV01 checks | Complete — live GSW valuation validated |
 | M04 | Historical VaR and ES | Rolling full-revaluation estimates | Not started |
 | M05 | Stress-testing engine | Hypothetical, historical, PCA, and reverse stresses | Not started |
 | M06 | Backtesting | VaR exception and ES tail diagnostics | Not started |

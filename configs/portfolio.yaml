@@ -1,0 +1,27 @@
+portfolio_id: treasury_zero_core
+currency: USD
+initial_market_value: 10000000.0
+valuation_date_rule: latest_complete_gsw_curve
+curve:
+  compounding: continuously_compounded
+  interpolation: linear_log_discount_factor
+  extrapolation: reject
+dv01:
+  parallel_bump_decimal: 0.0001
+  maximum_relative_linearization_error: 0.001
+positions:
+  - instrument_id: UST_ZERO_3Y
+    instrument_type: zero_coupon_bond
+    maturity_years: 3.0
+    face_value: 1.0
+    target_weight: 0.3333333333333333
+  - instrument_id: UST_ZERO_7Y
+    instrument_type: zero_coupon_bond
+    maturity_years: 7.0
+    face_value: 1.0
+    target_weight: 0.3333333333333333
+  - instrument_id: UST_ZERO_15Y
+    instrument_type: zero_coupon_bond
+    maturity_years: 15.0
+    face_value: 1.0
+    target_weight: 0.3333333333333333
