@@ -6,9 +6,9 @@ Research-grade market-risk engine for a US Treasury bond portfolio, covering Val
 
 ## Current status
 
-**Milestone M03 — zero-curve construction, zero-coupon valuation, and DV01 validation complete.**
+**Milestone M04 — historical full-revaluation VaR and Expected Shortfall complete.**
 
-This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, and a validated phase-one pricing engine for synthetic Treasury zero-coupon positions. Historical VaR/ES estimates, stress losses, and backtest results have not yet been implemented.
+This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, a validated phase-one pricing engine, and historical-simulation VaR/ES for synthetic Treasury zero-coupon positions. Stress losses and backtest results have not yet been implemented.
 
 ## Phase-one scope
 
@@ -32,6 +32,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [Google Colab workflow](docs/COLAB_WORKFLOW.md)
 - [M02 data ingestion and acceptance](docs/M02_DATA_INGESTION.md)
 - [M03 curve and valuation acceptance](docs/M03_CURVE_VALUATION.md)
+- [M04 historical VaR and ES acceptance](docs/M04_HISTORICAL_VAR_ES.md)
 
 ## Planned repository structure
 
@@ -53,6 +54,8 @@ Colab runtimes are temporary. GitHub remains the source of truth for notebooks, 
 After the setup notebook succeeds, run [`01_public_data_ingestion.ipynb`](notebooks/01_public_data_ingestion.ipynb) to reproduce the M02 GSW download and audit.
 
 Run [`02_curve_and_valuation.ipynb`](notebooks/02_curve_and_valuation.ipynb) to reproduce M03 curve construction, portfolio calibration, full repricing, and DV01 checks.
+
+Run [`03_historical_var_es.ipynb`](notebooks/03_historical_var_es.ipynb) to reproduce M04 complete-curve shock construction, scenario auditing, and rolling-window historical VaR/ES.
 
 ## Reproducibility rules
 

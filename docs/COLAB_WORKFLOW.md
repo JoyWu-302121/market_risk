@@ -10,6 +10,12 @@ Open the setup notebook from the repository:
 
 Alternatively, in Colab select **File > Open notebook > GitHub**, enter `JoyWu-302121/market_risk`, and choose the notebook.
 
+Completed milestone notebooks can also be opened directly:
+
+- [M02 public-data ingestion](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/01_public_data_ingestion.ipynb)
+- [M03 curve and valuation](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/02_curve_and_valuation.ipynb)
+- [M04 historical VaR and ES](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/03_historical_var_es.ipynb)
+
 ## 2. Initialize the runtime
 
 Run the notebook from top to bottom. It will:

@@ -17,3 +17,11 @@ The M03 packages provide:
 - Target-market-value portfolio construction
 - Frozen-position full repricing and positive-loss conventions
 - Linear and full-revaluation parallel DV01 diagnostics
+
+The M04 packages provide:
+
+- Complete adjacent-date historical zero-curve shock construction
+- Explicit missing-input and valuation-failure scenario audit rows
+- Frozen-position full repricing with position-level loss contributions
+- Nearest-rank empirical VaR and fractional-tail empirical ES
+- Current estimates over 500, 750, and 1,250 valid-observation windows

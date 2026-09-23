@@ -14,7 +14,7 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from bond_risk.curves import ZeroCurve
+from bond_risk.curves import ZeroCurve, latest_complete_curve_date
 
 
 class ZeroCurveTests(unittest.TestCase):
@@ -78,6 +78,20 @@ class ZeroCurveTests(unittest.TestCase):
 
         self.assertEqual(curve.observation_date, date(2026, 9, 18))
         self.assertAlmostEqual(curve.zero_rate(3.0), 0.03)
+
+    def test_latest_complete_curve_date_skips_incomplete_latest_date(self) -> None:
+        frame = pd.DataFrame(
+            {
+                "observation_date": ["2026-09-18"] * 3 + ["2026-09-21"] * 3,
+                "tenor_years": [1, 3, 7, 1, 3, 7],
+                "zero_yield_cc": [0.02, 0.03, 0.04, 0.021, 0.031, np.nan],
+                "is_observed": [True, True, True, True, True, False],
+            }
+        )
+
+        selected = latest_complete_curve_date(frame, required_tenors=[1, 3, 7])
+
+        self.assertEqual(selected.date(), date(2026, 9, 18))
 
 
 if __name__ == "__main__":

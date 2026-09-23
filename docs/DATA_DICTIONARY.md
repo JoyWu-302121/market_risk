@@ -54,6 +54,22 @@ Status: **Locked for phase-one implementation**
 | `loss` | float | USD | `-pnl`; positive values denote losses |
 | `status` | enum | — | `success`, `missing_input`, `invalid_curve`, or `valuation_error` |
 
+## M04 historical-risk fields
+
+| Field | Type | Unit | Rule |
+|---|---|---:|---|
+| `shock_start_date` | date | ISO date | Earlier date in an adjacent source-date pair |
+| `shock_end_date` | date | ISO date | Later date in an adjacent source-date pair; never after the valuation date |
+| `failure_reason` | string/null | — | Explicit reason when a scenario is not successful |
+| `window_size` | integer | valid observations | One of 500, 750, or 1,250 |
+| `sample_start_date` | date | ISO date | First successful shock date in the selected window |
+| `sample_end_date` | date | ISO date | Last successful shock date in the selected window |
+| `measure` | enum | — | `VaR` or `ES` |
+| `confidence_level` | float | decimal | 0.95/0.99 for VaR; 0.975/0.99 for ES |
+| `value` | float | USD loss | Positive-loss empirical risk estimate |
+| `convention` | enum | — | `nearest_rank_order_statistic` or `fractional_tail_mass` |
+| `position_contributions` | object | USD loss | Contributions that reconcile exactly to the portfolio measure |
+
 ## Missing-data rules
 
 1. Preserve raw missing values.

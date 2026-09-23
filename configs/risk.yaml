@@ -1,0 +1,47 @@
+historical_simulation:
+  horizon_days: 1
+  estimation_windows:
+    - 500
+    - 750
+    - 1250
+  var_confidence_levels:
+    - 0.95
+    - 0.99
+  es_confidence_levels:
+    - 0.975
+    - 0.99
+  curve_shock_method: additive_continuously_compounded_zero_rate_change
+  valuation_method: frozen_position_full_repricing
+  required_curve_tenors_years:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+  empirical_var_convention: nearest_rank_order_statistic
+  empirical_es_convention: fractional_tail_mass

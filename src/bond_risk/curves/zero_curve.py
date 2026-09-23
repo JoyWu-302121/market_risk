@@ -10,6 +10,41 @@ import numpy as np
 import pandas as pd
 
 
+def latest_complete_curve_date(
+    frame: pd.DataFrame,
+    *,
+    required_tenors: Iterable[float],
+) -> pd.Timestamp:
+    """Return the latest date with every required observed tenor exactly once."""
+
+    required_columns = {"observation_date", "tenor_years", "is_observed"}
+    missing = required_columns.difference(frame.columns)
+    if missing:
+        raise ValueError(f"Curve frame is missing columns: {sorted(missing)}")
+    tenors = np.asarray(tuple(required_tenors), dtype=float)
+    if len(tenors) < 2 or not np.isfinite(tenors).all() or (np.diff(tenors) <= 0).any():
+        raise ValueError("required_tenors must be finite and strictly increasing")
+    dates = pd.to_datetime(frame["observation_date"], errors="coerce").dt.normalize()
+    if dates.isna().any():
+        raise ValueError("Curve frame contains invalid observation dates")
+
+    observed = frame.loc[frame["is_observed"] == True].copy()  # noqa: E712
+    observed["_normalized_date"] = dates.loc[observed.index]
+    required = set(tenors)
+    complete_dates = []
+    for observation_date, group in observed.groupby("_normalized_date", sort=True):
+        tenor_values = pd.to_numeric(group["tenor_years"], errors="coerce")
+        if (
+            tenor_values.notna().all()
+            and not tenor_values.duplicated().any()
+            and required.issubset(set(tenor_values.astype(float)))
+        ):
+            complete_dates.append(pd.Timestamp(observation_date))
+    if not complete_dates:
+        raise ValueError("No complete observed curve is available for the required tenors")
+    return max(complete_dates)
+
+
 @dataclass(frozen=True)
 class ZeroCurve:
     """A zero curve represented by tenor and continuously compounded rates.
