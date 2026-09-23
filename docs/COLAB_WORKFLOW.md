@@ -18,6 +18,7 @@ Completed milestone notebooks can also be opened directly:
 - [M05 stress testing](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/04_stress_testing.ipynb)
 - [M06 backtesting](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/05_backtesting.ipynb)
 - [M07 parametric and PCA Monte Carlo](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/06_parametric_pca_monte_carlo.ipynb)
+- [M08 phase-one research report](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/07_research_report.ipynb)
 
 ## 2. Initialize the runtime
 

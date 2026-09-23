@@ -235,6 +235,8 @@ def main() -> int:
         "interpretation": {
             "coverage_rejection_is_model_evidence_not_pipeline_failure": True,
             "es_diagnostics_are_separate_from_var_coverage": True,
+            "validated_model": "Historical Simulation",
+            "gaussian_models_backtested": False,
         },
         "artifacts": {
             "audit_path": str(audit_path),

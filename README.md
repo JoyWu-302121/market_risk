@@ -6,9 +6,9 @@ Research-grade market-risk engine for a US Treasury bond portfolio, covering Val
 
 ## Current status
 
-**Milestone M07 — parametric-normal and PCA Monte Carlo benchmark comparison complete.**
+**Milestone M08 — phase-one research report and reproducibility validation complete.**
 
-This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, a validated phase-one pricing engine, historical-simulation VaR/ES, full-repricing stress testing, rolling backtest diagnostics, and parametric/PCA Monte Carlo benchmarks for synthetic Treasury zero-coupon positions.
+This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, a validated phase-one pricing engine, historical-simulation VaR/ES, full-repricing stress testing, rolling backtest diagnostics, parametric/PCA Monte Carlo benchmarks, and a reproducible research report for synthetic Treasury zero-coupon positions.
 
 ## Phase-one scope
 
@@ -36,6 +36,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [M05 stress-testing acceptance](docs/M05_STRESS_TESTING.md)
 - [M06 backtesting acceptance](docs/M06_BACKTESTING.md)
 - [M07 parametric and PCA Monte Carlo acceptance](docs/M07_PARAMETRIC_PCA_MONTE_CARLO.md)
+- [M08 phase-one research report](docs/M08_RESEARCH_REPORT.md)
 
 ## Planned repository structure
 
@@ -65,6 +66,8 @@ Run [`04_stress_testing.ipynb`](notebooks/04_stress_testing.ipynb) to reproduce 
 Run [`05_backtesting.ipynb`](notebooks/05_backtesting.ipynb) to reproduce M06 rolling VaR coverage and Expected Shortfall tail diagnostics.
 
 Run [`06_parametric_pca_monte_carlo.ipynb`](notebooks/06_parametric_pca_monte_carlo.ipynb) to reproduce M07 Historical Simulation, Parametric Normal, and full-covariance PCA Monte Carlo comparisons.
+
+Run [`07_research_report.ipynb`](notebooks/07_research_report.ipynb) to reproduce the complete M03-M08 validation, consolidated tables, and report figures.
 
 ## Reproducibility rules
 

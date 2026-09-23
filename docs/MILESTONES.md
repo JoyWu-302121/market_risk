@@ -9,7 +9,7 @@
 | M05 | Stress-testing engine | Hypothetical, historical, PCA, and reverse stresses | Complete — live GSW validation passed |
 | M06 | Backtesting | VaR exception and ES tail diagnostics | Complete — live GSW validation passed |
 | M07 | Parametric and PCA simulation | Comparable benchmark models and residual risk | Complete — live GSW validation passed |
-| M08 | Research report | Results, limitations, sensitivities, and reproducibility | Not started |
+| M08 | Research report | Results, limitations, sensitivities, and reproducibility | Complete — live GSW validation passed |
 | M09 | Coupon-bond extension | Cash-flow schedules and key-rate duration | Not started |
 | M10 | Credit-risk extension | Spread risk and corporate-bond scenarios | Not started |
 

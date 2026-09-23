@@ -92,4 +92,4 @@ The simulated-versus-target covariance Frobenius relative errors were 0.27%, 0.4
 
 ## Completion boundary
 
-M07 compares current risk estimates; it does not backtest the new Gaussian models. M06's historical-model coverage conclusions do not transfer to Parametric Normal or PCA Monte Carlo. The phase-one data also omit coupon cash flows, Treasury-specific instrument metadata, carry, roll-down, bid-ask costs, funding, credit spreads, liquidity, and intraday risk. M08 will consolidate results, limitations, and reproducibility evidence into the research report.
+M07 compares current risk estimates; it does not backtest the new Gaussian models. M06's historical-model coverage conclusions do not transfer to Parametric Normal or PCA Monte Carlo. The phase-one data also omit coupon cash flows, Treasury-specific instrument metadata, carry, roll-down, bid-ask costs, funding, credit spreads, liquidity, and intraday risk. M08 consolidates these results, limitations, and reproducibility evidence in the phase-one research report.

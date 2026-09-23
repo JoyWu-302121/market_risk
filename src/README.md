@@ -50,3 +50,11 @@ The M07 risk package provides:
 - Fixed-seed Gaussian factor simulation retaining all residual components
 - Exact zero-coupon full repricing for Monte Carlo scenarios
 - Curve-factor and position-level risk attribution
+
+The M08 reporting package provides:
+
+- Cross-milestone date, portfolio, value, and status validation
+- Exact M04-to-M07 Historical Simulation reconciliation
+- Consolidated current-risk, stress, reverse-stress, and backtesting tables
+- Reproducibility metadata and explicit model-scope boundaries
+- Seven deterministic research-report figures

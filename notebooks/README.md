@@ -9,3 +9,4 @@ Reviewable research notebooks will be added after reusable logic is implemented 
 - [`04_stress_testing.ipynb`](04_stress_testing.ipynb): runs hypothetical, historical, PCA-factor, and reverse stress tests with full-repricing and key-rate diagnostics.
 - [`05_backtesting.ipynb`](05_backtesting.ipynb): reproduces rolling Historical VaR coverage tests and separate Expected Shortfall tail diagnostics.
 - [`06_parametric_pca_monte_carlo.ipynb`](06_parametric_pca_monte_carlo.ipynb): compares Historical Simulation, Parametric Normal, and complete-covariance PCA Monte Carlo risk with residual and position attribution.
+- [`07_research_report.ipynb`](07_research_report.ipynb): reruns M03-M08 from official GSW data and displays the consolidated phase-one tables and figures.

@@ -116,6 +116,19 @@ Status: **Locked for phase-one implementation**
 | `simulated_covariance_relative_error` | float | decimal | Frobenius norm error relative to fitted covariance |
 | `position_contributions` | object | USD loss | Euler or empirical full-repricing contributions that sum to the risk measure |
 
+## M08 research-report fields
+
+| Field | Type | Unit | Rule |
+|---|---|---:|---|
+| `git_commit` | string | Git SHA | Exact repository revision used for the report run |
+| `runtime_versions` | object | — | Python and numerical-library versions recorded at execution |
+| `source_reports` | object | paths | M03-M07 audit reports consolidated by M08 |
+| `report_boundaries` | object | — | Explicit statements about backtesting, regulatory, investment, and instrument scope |
+| `figures` | array | paths | Seven generated PNG research figures |
+| `consolidated_tables` | object | paths | Compressed CSV copies of accepted risk, stress, and validation tables |
+| `common_valuation_date` | boolean | — | True only when M03-M07 use the same valuation date |
+| `m04_and_m07_historical_estimates_match` | boolean | — | Exact cross-milestone Historical Simulation reconciliation |
+
 ## Missing-data rules
 
 1. Preserve raw missing values.
