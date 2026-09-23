@@ -1,0 +1,44 @@
+stress_testing:
+  valuation_method: frozen_position_full_repricing
+  sensitivity_method: central_difference_key_rate_dv01
+  key_rate_bump_decimal: 0.0001
+  hypothetical:
+    parallel_amplitudes_bps:
+      - 50
+      - 100
+      - 200
+    slope_pivot_years: 7.0
+    slope_amplitudes_bps:
+      - 50
+      - 100
+    butterfly_center_years: 7.0
+    butterfly_amplitudes_bps:
+      - 50
+      - 100
+  historical:
+    top_one_day_scenarios: 5
+    multi_day_horizons:
+      - 5
+      - 10
+    top_scenarios_per_horizon: 3
+  pca:
+    estimation_window: 750
+    factor_count: 3
+    standard_deviation_multiples:
+      - 2
+      - 3
+      - 4
+  reverse_stress:
+    loss_thresholds_usd:
+      - 100000.0
+      - 200000.0
+      - 300000.0
+    maximum_amplitude_bps: 500.0
+    grid_step_bps: 1.0
+    tolerance_bps: 0.01
+    direction_families:
+      - parallel_up
+      - steepener
+      - flattener
+      - positive_butterfly
+      - negative_butterfly

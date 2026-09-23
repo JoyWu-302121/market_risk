@@ -6,7 +6,7 @@
 | M02 | Public-data ingestion | Versioned GSW/FRED download and data audit | Complete — primary GSW live; optional FRED adapter ready |
 | M03 | Curve and valuation engine | Curve interpolation, zero-coupon pricing, DV01 checks | Complete — live GSW valuation validated |
 | M04 | Historical VaR and ES | Rolling-window full-revaluation estimates | Complete — live GSW validation passed |
-| M05 | Stress-testing engine | Hypothetical, historical, PCA, and reverse stresses | Not started |
+| M05 | Stress-testing engine | Hypothetical, historical, PCA, and reverse stresses | Complete — live GSW validation passed |
 | M06 | Backtesting | VaR exception and ES tail diagnostics | Not started |
 | M07 | Parametric and PCA simulation | Comparable benchmark models and residual risk | Not started |
 | M08 | Research report | Results, limitations, sensitivities, and reproducibility | Not started |

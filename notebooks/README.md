@@ -6,3 +6,4 @@ Reviewable research notebooks will be added after reusable logic is implemented 
 - [`01_public_data_ingestion.ipynb`](01_public_data_ingestion.ipynb): downloads, versions, normalizes, and audits GSW/FRED public data.
 - [`02_curve_and_valuation.ipynb`](02_curve_and_valuation.ipynb): constructs the zero curve, calibrates the phase-one portfolio, and validates full repricing and DV01.
 - [`03_historical_var_es.ipynb`](03_historical_var_es.ipynb): builds complete historical curve shocks and estimates full-revaluation VaR and Expected Shortfall over the accepted windows.
+- [`04_stress_testing.ipynb`](04_stress_testing.ipynb): runs hypothetical, historical, PCA-factor, and reverse stress tests with full-repricing and key-rate diagnostics.

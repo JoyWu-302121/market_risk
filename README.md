@@ -6,9 +6,9 @@ Research-grade market-risk engine for a US Treasury bond portfolio, covering Val
 
 ## Current status
 
-**Milestone M04 — historical full-revaluation VaR and Expected Shortfall complete.**
+**Milestone M05 — hypothetical, historical, PCA-factor, and reverse stress testing complete.**
 
-This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, a validated phase-one pricing engine, and historical-simulation VaR/ES for synthetic Treasury zero-coupon positions. Stress losses and backtest results have not yet been implemented.
+This repository contains the research contract, a tested and versioned GSW/FRED ingestion layer, a validated phase-one pricing engine, historical-simulation VaR/ES, and a full-repricing stress-testing engine for synthetic Treasury zero-coupon positions. Backtest results have not yet been implemented.
 
 ## Phase-one scope
 
@@ -33,6 +33,7 @@ The phase-one result is a public-data research model. It is not a bank quote, a 
 - [M02 data ingestion and acceptance](docs/M02_DATA_INGESTION.md)
 - [M03 curve and valuation acceptance](docs/M03_CURVE_VALUATION.md)
 - [M04 historical VaR and ES acceptance](docs/M04_HISTORICAL_VAR_ES.md)
+- [M05 stress-testing acceptance](docs/M05_STRESS_TESTING.md)
 
 ## Planned repository structure
 
@@ -56,6 +57,8 @@ After the setup notebook succeeds, run [`01_public_data_ingestion.ipynb`](notebo
 Run [`02_curve_and_valuation.ipynb`](notebooks/02_curve_and_valuation.ipynb) to reproduce M03 curve construction, portfolio calibration, full repricing, and DV01 checks.
 
 Run [`03_historical_var_es.ipynb`](notebooks/03_historical_var_es.ipynb) to reproduce M04 complete-curve shock construction, scenario auditing, and rolling-window historical VaR/ES.
+
+Run [`04_stress_testing.ipynb`](notebooks/04_stress_testing.ipynb) to reproduce M05 hypothetical, historical, PCA-factor, and reverse stress tests.
 
 ## Reproducibility rules
 

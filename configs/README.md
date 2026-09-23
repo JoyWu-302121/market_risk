@@ -5,3 +5,4 @@ Portfolio, risk-model, and stress-scenario configuration files will be added in 
 - [`data_sources.yaml`](data_sources.yaml) defines the approved GSW/FRED endpoints, analysis start date, required tenors, source units, model units, and staleness threshold.
 - [`portfolio.yaml`](portfolio.yaml) defines the phase-one portfolio, curve convention, DV01 bump, and validation tolerance.
 - [`risk.yaml`](risk.yaml) defines the M04 one-day historical-simulation windows, confidence levels, complete curve-node set, full-repricing method, and finite-sample VaR/ES conventions.
+- [`stress_scenarios.yaml`](stress_scenarios.yaml) defines the M05 hypothetical shapes, historical selection rules, PCA factor stresses, key-rate approximation, and reverse-stress search boundaries.

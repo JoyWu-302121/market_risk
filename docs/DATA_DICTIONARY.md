@@ -70,6 +70,21 @@ Status: **Locked for phase-one implementation**
 | `convention` | enum | — | `nearest_rank_order_statistic` or `fractional_tail_mass` |
 | `position_contributions` | object | USD loss | Contributions that reconcile exactly to the portfolio measure |
 
+## M05 stress-testing fields
+
+| Field | Type | Unit | Rule |
+|---|---|---:|---|
+| `scenario_family` | enum | — | Hypothetical, historical, PCA factor, or reverse stress family |
+| `shock_bps` | object | basis points | Complete 1Y-30Y node-shock vector |
+| `position_loss_contributions` | object | USD loss | Full-repricing position losses that sum to portfolio loss |
+| `linear_key_rate_contributions` | object | USD loss | Central-difference node contributions that sum to the linear estimate |
+| `linear_sensitivity_loss` | float | USD loss | Sum of key-rate contributions |
+| `full_minus_linear` | float | USD loss | Full-repricing loss minus linear sensitivity loss |
+| `maximum_absolute_shock_bps` | float | basis points | Largest absolute node shock in the scenario |
+| `loss_threshold_usd` | float/null | USD loss | Reverse-stress breach target |
+| `amplitude_bps` | float/null | basis points | Reverse-stress maximum-node amplitude at the boundary |
+| `residual_variance_ratio` | float/null | decimal | PCA variation outside the retained factors |
+
 ## Missing-data rules
 
 1. Preserve raw missing values.

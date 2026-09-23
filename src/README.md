@@ -25,3 +25,11 @@ The M04 packages provide:
 - Frozen-position full repricing with position-level loss contributions
 - Nearest-rank empirical VaR and fractional-tail empirical ES
 - Current estimates over 500, 750, and 1,250 valid-observation windows
+
+The M05 packages provide:
+
+- Parallel, steepener, flattener, and butterfly hypothetical scenarios
+- Extreme complete one-day and 5/10-source-day historical replay
+- Deterministic PCA factor shocks with retained residual variance
+- Family-constrained reverse-stress threshold searches
+- Central-difference key-rate attribution and full-versus-linear residuals
