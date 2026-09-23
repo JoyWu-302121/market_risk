@@ -76,7 +76,7 @@ PCA is fitted to the latest 750 successful 30-node daily zero-rate changes, cove
 
 The largest PCA loss was USD 176,589.63 for the `PC1 +4 standard deviations` scenario. PCA labels are assigned only after inspecting loadings; the reusable engine stores the factors as PC1, PC2, and PC3.
 
-M05 uses PCA only for deterministic factor stresses. Stochastic PCA simulation and benchmark risk models remain M07 work.
+M05 uses PCA only for deterministic factor stresses. M07 separately implements and validates stochastic PCA simulation and benchmark risk models.
 
 ## Reverse stress
 
@@ -113,4 +113,4 @@ Reverse-stress minimality is conditional on the five configured shape families a
 
 ## Completion boundary
 
-M05 provides deterministic stress losses and conditional reverse-stress thresholds. It does not estimate scenario probabilities or validate forecast calibration. Rolling VaR exceptions, Kupiec and Christoffersen tests, and ES tail diagnostics are M06 work. Parametric and stochastic PCA models remain M07 work.
+M05 provides deterministic stress losses and conditional reverse-stress thresholds. It does not estimate scenario probabilities or validate forecast calibration. M06 separately implements rolling VaR exceptions, Kupiec and Christoffersen tests, and ES tail diagnostics. M07 separately implements Parametric Normal and stochastic PCA models.

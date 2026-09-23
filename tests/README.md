@@ -13,3 +13,5 @@ M04 tests verify adjacent-date shock construction, explicit missing transitions,
 M05 tests verify hypothetical curve shapes, full and key-rate attribution identities, PCA orthonormality and residual variance, historical multi-day missing-data boundaries, and reverse-stress threshold bracketing.
 
 M06 tests verify exact zero-coupon backtest losses, no-lookahead forecast windows, explicit failed outcomes and warm-up periods, coverage transition statistics, exception clustering, and ES tail comparisons.
+
+M07 tests verify full covariance reconstruction, orthonormal PCA loadings, positive retained residual variance, closed-form normal risk measures, fixed-seed Monte Carlo reproducibility, simulated covariance accuracy, and exact factor/position contribution reconciliation.

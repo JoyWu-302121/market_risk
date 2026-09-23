@@ -8,3 +8,4 @@ Reviewable research notebooks will be added after reusable logic is implemented 
 - [`03_historical_var_es.ipynb`](03_historical_var_es.ipynb): builds complete historical curve shocks and estimates full-revaluation VaR and Expected Shortfall over the accepted windows.
 - [`04_stress_testing.ipynb`](04_stress_testing.ipynb): runs hypothetical, historical, PCA-factor, and reverse stress tests with full-repricing and key-rate diagnostics.
 - [`05_backtesting.ipynb`](05_backtesting.ipynb): reproduces rolling Historical VaR coverage tests and separate Expected Shortfall tail diagnostics.
+- [`06_parametric_pca_monte_carlo.ipynb`](06_parametric_pca_monte_carlo.ipynb): compares Historical Simulation, Parametric Normal, and complete-covariance PCA Monte Carlo risk with residual and position attribution.

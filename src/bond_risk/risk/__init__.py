@@ -16,6 +16,15 @@ from .backtesting import (
     summarize_var_backtests,
 )
 from .key_rate import key_rate_dv01, linear_key_rate_contributions
+from .model_comparison import (
+    MonteCarloRun,
+    PCACovarianceModel,
+    empirical_risk_with_contributions,
+    factor_variance_contributions,
+    fit_pca_covariance_model,
+    parametric_normal_risk,
+    simulate_pca_full_repricing,
+)
 from .reverse_stress import ReverseStressSearch, search_reverse_stress
 
 __all__ = [
@@ -25,6 +34,13 @@ __all__ = [
     "estimate_historical_risk",
     "key_rate_dv01",
     "linear_key_rate_contributions",
+    "MonteCarloRun",
+    "PCACovarianceModel",
+    "empirical_risk_with_contributions",
+    "factor_variance_contributions",
+    "fit_pca_covariance_model",
+    "parametric_normal_risk",
+    "simulate_pca_full_repricing",
     "ReverseStressSearch",
     "search_reverse_stress",
     "HistoricalBacktestRun",

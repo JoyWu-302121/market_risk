@@ -101,6 +101,21 @@ Status: **Locked for phase-one implementation**
 | `independence_p_value` | float | decimal | First-order exception-independence p-value |
 | `conditional_coverage_p_value` | float | decimal | Combined coverage and independence p-value |
 
+## M07 model-comparison fields
+
+| Field | Type | Unit | Rule |
+|---|---|---:|---|
+| `method` | enum | — | Historical Simulation, Parametric Normal, or PCA Monte Carlo |
+| `probability_measure` | enum | — | `P` for physical-measure market-risk estimation |
+| `loss_standard_deviation` | float/null | USD loss | Parametric or simulated daily loss standard deviation |
+| `component` | string | — | Individual PCA component such as `PC1` through `PC30` |
+| `factor` | string | — | `PC1`, `PC2`, `PC3`, or aggregated `residual` label |
+| `eigenvalue` | float | decimal yield squared | Sample variance of the orthogonal factor score |
+| `explained_variance_ratio` | float | decimal | Component eigenvalue divided by total curve variance |
+| `portfolio_variance_share` | float | decimal | Orthogonal factor contribution divided by total linear loss variance |
+| `simulated_covariance_relative_error` | float | decimal | Frobenius norm error relative to fitted covariance |
+| `position_contributions` | object | USD loss | Euler or empirical full-repricing contributions that sum to the risk measure |
+
 ## Missing-data rules
 
 1. Preserve raw missing values.

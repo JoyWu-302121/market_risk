@@ -17,6 +17,7 @@ Completed milestone notebooks can also be opened directly:
 - [M04 historical VaR and ES](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/03_historical_var_es.ipynb)
 - [M05 stress testing](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/04_stress_testing.ipynb)
 - [M06 backtesting](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/05_backtesting.ipynb)
+- [M07 parametric and PCA Monte Carlo](https://colab.research.google.com/github/JoyWu-302121/market_risk/blob/main/notebooks/06_parametric_pca_monte_carlo.ipynb)
 
 ## 2. Initialize the runtime
 
@@ -86,4 +87,4 @@ Colab updates its runtime packages over time. The notebook installs this reposit
 - Configuration file or parameters
 - Random seed for simulation
 
-GPU acceleration is unnecessary for the initial bond-pricing and historical-simulation milestones. A standard CPU runtime is sufficient.
+GPU acceleration is unnecessary for the initial bond-pricing, historical-simulation, and 100,000-path PCA Monte Carlo milestones. A standard CPU runtime is sufficient.

@@ -106,4 +106,4 @@ The 1,392 missing rows equal 464 incomplete one-day transitions across three win
 
 ## Completion boundary
 
-M06 validates only the historical-simulation model under the phase-one synthetic portfolio and one-source-day frozen-position P&L definition. Results are sensitive to the public-data vintage, missing-data rule, target-weight recalibration, empirical estimator convention, and window length. M07 will add parametric normal and PCA Monte Carlo benchmark models; those methods require their own validation and must not inherit M06 conclusions automatically.
+M06 validates only the historical-simulation model under the phase-one synthetic portfolio and one-source-day frozen-position P&L definition. Results are sensitive to the public-data vintage, missing-data rule, target-weight recalibration, empirical estimator convention, and window length. M07 separately validates Parametric Normal and PCA Monte Carlo current-estimate benchmarks; those models do not inherit M06 coverage conclusions.

@@ -1,0 +1,24 @@
+model_comparison:
+  horizon_days: 1
+  estimation_windows:
+    - 500
+    - 750
+    - 1250
+  var_confidence_levels:
+    - 0.95
+    - 0.99
+  es_confidence_levels:
+    - 0.975
+    - 0.99
+  parametric_normal:
+    mean_assumption: zero
+    covariance_estimator: sample_covariance
+    valuation_method: linear_key_rate_sensitivity
+  pca_monte_carlo:
+    factor_count: 3
+    residual_treatment: retain_all_remaining_orthogonal_components
+    distribution: independent_standard_normal_factor_scores
+    simulation_count: 100000
+    random_seed: 20260923
+    valuation_method: frozen_position_full_repricing
+  probability_measure: P

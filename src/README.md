@@ -42,3 +42,11 @@ The M06 risk package provides:
 - Kupiec unconditional-coverage diagnostics
 - Christoffersen independence and conditional-coverage diagnostics
 - Exception-clustering and separate ES realized-tail diagnostics
+
+The M07 risk package provides:
+
+- Sample-covariance Parametric Normal VaR and ES
+- A complete PCA eigensystem with an explicit three-factor/residual split
+- Fixed-seed Gaussian factor simulation retaining all residual components
+- Exact zero-coupon full repricing for Monte Carlo scenarios
+- Curve-factor and position-level risk attribution
